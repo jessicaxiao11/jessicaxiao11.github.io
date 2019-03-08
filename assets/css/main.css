@@ -2068,6 +2068,7 @@
 			font-style: normal;
 		}
 
+
 /* Section/Article with Color */
 
 	section.specialColor, article.specialColor {
@@ -2322,6 +2323,15 @@
 			.features article .image img {
 				display: block;
 				width: 100%;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
+			}
+
+			.features article .image img:hover {
+				-webkit-transform: scale(1.075);
+				transform: scale(1.075);
 			}
 
 		.features article .inner {
@@ -2357,6 +2367,15 @@
 		box-shadow: 0 2px 0 0 #e5e5e5;
 		margin: 0 0 2em 0;
 		padding: 3em;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+
+	.box:hover {
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
 	}
 
 		.box > :last-child {
@@ -3777,6 +3796,14 @@
 				}
 
 		/* Box */
+			.features {
+				margin: 0.75em;
+				overflow-x: hidden;
+				padding: 0.1em 0.1em !important;
+				border-top: 0;
+				padding: 0;
+			}
+			
 
 			.box {
 				margin: 1em;
@@ -3980,3 +4007,94 @@
 			}
 
 	}
+	/*taken from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+
+
+	* {
+		  box-sizing: border-box;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.containerSlideshow {
+		  position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+		  cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 40%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: black;
+		  font-weight: bold;
+		  font-size: 20px;
+		  border-color: red;
+		  border-width: 0px;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		/* Container for image text */
+		.caption-container {
+		  text-align: center;
+		  background-color: #222;
+		  padding: 2px 16px;
+		  color: white;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+		  float: left;
+		  width: 16.66%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
