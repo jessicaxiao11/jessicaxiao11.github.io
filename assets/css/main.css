@@ -2329,11 +2329,6 @@
 				transition: .3s ease-in-out;
 			}
 
-			.features article .image img:hover {
-				-webkit-transform: scale(1.075);
-				transform: scale(1.075);
-			}
-
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
@@ -3114,6 +3109,7 @@
 					#header nav > ul > li:first-child {
 						margin-left: 0;
 					}
+
 
 					#header nav > ul > li.active a:not(.button) {
 						background-color: rgba(153, 153, 153, 0.25);
