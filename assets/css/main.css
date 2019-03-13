@@ -3638,6 +3638,15 @@
 				font-size: 11pt;
 			}
 
+			p {
+				padding-left: 1em;
+			}
+
+
+			.row {
+				padding-left: 1em;
+			}
+
 	}
 
 /* Narrower */
