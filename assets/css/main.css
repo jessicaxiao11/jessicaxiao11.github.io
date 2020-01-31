@@ -122,7 +122,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: 1px solid;
 		color: #e89980;
 		text-decoration: none;
 	}
@@ -253,7 +253,7 @@
 	}
 
 	.bright {
-		color: #ff6647;
+		color: #4B7BB4;
 		font-weight: 700;
 		font-size: 1.25em;
 	}
@@ -2136,6 +2136,14 @@
 		font-style: italic;
 	}
 
+	p.big {
+		color: #999;
+		position: relative;
+		margin: 0 0 1.5em 0;
+		font-style: italic;
+		font-size: 25em;
+	}
+
 	header h2 + p {
 		font-size: 1.25em;
 		margin-top: -1em;
@@ -2449,7 +2457,7 @@
 
 
 .block {
-		background: #d0deed;
+		background: #E0E8F1;
 		border-radius: 6px;
 		box-shadow: 0 2px 0 0 #e5e5e5;
 		margin: 0 0 2em 0;
@@ -3371,8 +3379,8 @@
 
 	#banner {
 		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/mainPage.jpg");
+/*		background-color: #EC7063;
+*/		background-image: url("images/overlay.png"), url("../../images/landscape1.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
