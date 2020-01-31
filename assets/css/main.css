@@ -122,9 +122,12 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: 1px solid;
 		color: #e89980;
 		text-decoration: none;
+	}
+
+	a.underline {
+		border-bottom: 1px solid;
 	}
 
 		a:hover {
@@ -2671,6 +2674,8 @@
 			display: block;
 		}
 
+
+
 		.image.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
@@ -4204,18 +4209,20 @@
 		}
 
 		.row:after {
-		  content: "";
-		  display: table;
-		  clear: both;
+			  content: "";
+			  clear: both;
+			  display: table;
 		}
+
 
 		/* Six columns side by side */
 		.column {
-		  float: left;
-		  width: 16.66%;
+		  float: center;
+		  width: 33.3%;
+		  padding: 20px;
 		}
 
-		/* Add a transparency effect for thumnbail images */
+		/* Add a transparency effect for thumnbail images 
 		.demo {
 		  opacity: 0.6;
 		}
