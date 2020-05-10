@@ -82,7 +82,7 @@
 	.problem {
 		min-height: 600px;
 		background-color: black;
-		display: flex;
+		display: table;
 		width: 100%;
 	}
 
