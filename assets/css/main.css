@@ -82,7 +82,7 @@
 	.problem {
 		min-height: 600px;
 		background-color: black;
-		display: table;
+		display: flex;
 		width: 100%;
 	}
 
@@ -121,30 +121,16 @@
 		background-color: #ff9300;
 		width: 100%;
 	}
-/* 
-	  .imageRow {
-		display:flex;
-		justify-content: center;
-		flex-wrap:nowrap;
-		align-items: center
-	}
-	
-	.imageRow img {
-		width:80%;
-		flex: 0 0 100px;
-	} */
 
 	.imageRow {
 		text-align: justify;
-		/* padding-left: 50px;
-		padding-right: 50px; */
-		padding: 50px;
+		padding: 5vw;
 		background-color: black;
 	}
 	
 	.imageRow img {
 		display: inline-block;
-		height: 400px;
+		height: 25vw;
 	}
 	
 	.imageRow:after {
